@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.config.AppConfig;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -10,10 +13,19 @@ public class App
 //       Student student = (Student) beanFactory.getBean("student");
 //       System.out.println(student);
 
-        AbstractApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
+//        AbstractApplicationContext context = new ClassPathXmlApplicationContext("Spring.xml");
+//        Animal animal = (Animal) context.getBean("animal");
+//        animal.sound();
+//        animal.feature();
+
+
+        //java configuration
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+
         Animal animal = (Animal) context.getBean("animal");
-        animal.sound();
         animal.feature();
+        animal.sound();
+
 
     }
 }
