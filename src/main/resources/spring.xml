@@ -6,6 +6,14 @@
 
     <!-- bean definitions here -->
 
-    <bean id="dog" class="org.example.Dog"></bean>
+<!--    <bean id="dog" class="org.example.Dog">-->
+<!--&lt;!&ndash;        <property name="legs" value="4"/>&ndash;&gt;-->
+<!--        <constructor-arg name="legs" value="4"/>-->
+<!--    </bean>-->
+
+    <bean id="student" class ="org.example.Student">
+        <constructor-arg name="name" value="Tine"/>
+        <constructor-arg name="age" value="21"/>
+    </bean>
 
 </beans>
