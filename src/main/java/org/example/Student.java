@@ -7,19 +7,14 @@ public class Student {
     public Student(){
 
     }
-    public Student(String name, int id){
-        this.name = name;
-        this.age= age;
-
+    public Student(String name, int age){
+        this.name=name;
+        this.age = age;
     }
 
-        @Override
-        public String toString() {
-
-            // Print student class attributes
-            return "Student{" + "name='" + name + '\'' + ", age='" + age + '\'' + '}';
-        }
-
-
-
+    public String toString(){
+        return "Student =" + name + " " + "age= " + age;
     }
+
+
+}
