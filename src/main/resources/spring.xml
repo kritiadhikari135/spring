@@ -17,5 +17,9 @@
 <!--    </bean>-->
 
 
-    <bean id="animal" class="org.example.Dog"></bean>
+<!--    <bean id="animal" class="org.example.Dog"></bean>-->
+
+
+<!--    lifecycle of bean by programmatic approach-->
+    <bean id="newid" class="org.example.BeanLifeCycleByImplementingInterface"/>
 </beans>
