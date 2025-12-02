@@ -21,5 +21,13 @@
 
 
 <!--    lifecycle of bean by programmatic approach-->
-    <bean id="newid" class="org.example.BeanLifeCycleByImplementingInterface"/>
+<!--    <bean id="newid" class="org.example.BeanLifeCycleByImplementingInterface"/>-->
+
+
+
+<!--    life cycle by annotation-->
+    <bean class="org.springframework.context.annotation.commonAnnotationBeanPostprocessor"/>
+    <bean id ="hw" class="org.example.LifeCyceUsingAnnotation"/>
+
+
 </beans>
