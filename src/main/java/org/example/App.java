@@ -22,9 +22,13 @@ public class App
 
 //
 
+    //
+    //        ConfigurableApplicationContext cap = new ClassPathXmlApplicationContext("Spring.xml");
+    //        cap.close();
 
-        ConfigurableApplicationContext cap = new ClassPathXmlApplicationContext("Spring.xml");
-        cap.close();
+        ApplicationContext app =new AnnotationConfigApplicationContext(AppConfig.class);
+        Beann beann = app.getBean(Beann.class);
+        beann.test();
 
 
     }
