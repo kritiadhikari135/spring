@@ -26,9 +26,14 @@ public class App
     //        ConfigurableApplicationContext cap = new ClassPathXmlApplicationContext("Spring.xml");
     //        cap.close();
 
+//        ApplicationContext app =new AnnotationConfigApplicationContext(AppConfig.class);
+//        Beann beann = app.getBean(Beann.class);
+//        beann.test();
+
+
         ApplicationContext app =new AnnotationConfigApplicationContext(AppConfig.class);
-        Beann beann = app.getBean(Beann.class);
-        beann.test();
+        College college = app.getBean("CollegeBean", College.class);
+        college.test();
 
 
     }
