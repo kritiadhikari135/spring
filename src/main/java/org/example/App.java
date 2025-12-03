@@ -31,9 +31,14 @@ public class App
 //        beann.test();
 
 
-        ApplicationContext app =new AnnotationConfigApplicationContext(AppConfig.class);
-        College college = app.getBean("CollegeBean", College.class);
-        college.test();
+//        ApplicationContext app =new AnnotationConfigApplicationContext(AppConfig.class);
+//        College college = app.getBean("CollegeBean", College.class);
+//        college.test();
+
+        //@configuration
+        ApplicationContext context= new AnnotationConfigApplicationContext(CollegesConfig.class);
+        Colleges colleges = context.getBean("collegesBean", Colleges.class);
+        colleges.test();
 
 
     }
